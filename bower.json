@@ -1,0 +1,24 @@
+{
+  "name": "cgcc",
+  "version": "0.0.0",
+  "authors": [
+    "Carson Gee <x@carsongee.com>"
+  ],
+  "description": "personal site",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "http://carsongee.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "furtive": "~2.2.4",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

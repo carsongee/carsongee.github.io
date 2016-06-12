@@ -1,0 +1,45 @@
+// Header style
+header .left-header h2 {
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0 0 0 1rem;
+    text-shadow: 2px 2px 0 rgba(222, 135, 205, 1);
+}
+
+header .right-header h1 {
+    color: $purple;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+header .right-header h2 {
+    color: $purple;
+    font-family: 'Cinzel', serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: -.7em 0 0 0;
+}
+
+header .right-header .flip {
+    @include horizontal-flip();
+    color: $pink;
+    display: inline-block;
+    padding: 0;
+    margin: 0;    
+}
+
+
+// Footer Style
+.footer ul.contact-list {
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 0 3;
+    list-style: none;
+}
+.footer .contact-list a {
+    text-decoration: none;
+}

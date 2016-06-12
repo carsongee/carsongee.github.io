@@ -1,0 +1,20 @@
+title: Carson Gee
+email: x@carsongee.com
+description: >
+  Carson Gee's personal site that covers the everyday,
+  projects, his CV, and skills.
+baseurl: ""
+url: "http://carsongee.com"
+social_username: carsongee
+
+# Build settings
+markdown: kramdown
+exclude:
+  - "bower.json"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gulpfile.js"
+  - "node_modules/"
+  - "bower_components/"
+sass:
+  style: compressed

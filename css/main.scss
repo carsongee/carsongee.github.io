@@ -1,0 +1,27 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$background-color: #fdfdfd;
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+$purple: #220055;
+$pink: #de87cd;
+$text-color: $grey-color-dark;
+$link-color: $purple;
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import "furtive/all";
+@import "fa/font-awesome";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "index"
+;
