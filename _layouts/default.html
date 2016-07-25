@@ -7,10 +7,12 @@
 
     {% include header.html %}
 
-    <section>
+    <section id="body">
       <div class="p1">
-        <div class="main grd-row">
-        {{ content }}
+        <div class="main grd-row {{ page.title | slugify }}">
+          <div class="grd-row-col-6">
+            {{ content }}
+          </div>
         </div>
       </div>
     </section>

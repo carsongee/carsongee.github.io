@@ -1,22 +1,39 @@
 // Header style
-header .left-header h2 {
-    color: $pink;
-    font-weight: bold;
-    font-size: 3rem;
-    margin: 0 0 0 1rem;
-    /* text-shadow: 2px 2px 0 rgba(222, 135, 205, 1); */
+header {
+    background-color: $fifteen;
+    padding-left: 1rem;
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100%;
+}
+header  h1 {
+    color: $eight;
+    font-size: .8rem;
+    margin: 0;
+}
+div .main {
+    margin-top: 1rem;
 }
 
-header .right-header h1 {
-    color: $purple;
+#bg-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+#bg-img h1 {
+    color: $one;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 2rem;
     padding: 0;
     margin: 0;
 }
-header .right-header h2 {
-    color: $purple;
+#bg-img h2 {
+    color: $one;
     font-family: 'Cinzel', serif;
     font-weight: normal;
     font-size: 1.8rem;
@@ -24,16 +41,22 @@ header .right-header h2 {
     margin: -.7em 0 0 0;
 }
 
-header .right-header .flip {
+#bg-img .flip {
     @include horizontal-flip();
-    color: $pink;
+    color: $eight;
     display: inline-block;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
 
 
 // Footer Style
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color;
+}
 .footer ul.contact-list {
     -webkit-columns: 3;
     -moz-columns: 3;

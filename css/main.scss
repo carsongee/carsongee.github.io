@@ -3,18 +3,21 @@
 ---
 @charset "utf-8";
 
-$background-color: #fdfdfd;
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
-$purple: #220055;
-$purple1: #7A3E48;
-$pink: #B256A1;
-$text-color: $grey-color-dark;
-$link-color: $purple;
+$background-color: #0f090d;
+$foreground-color: #b493b4;
+$text-color: $foreground-color;
+$zero: #221d24;
+$one: #a3409d;
+$four: #3e6b90;
+$five: #804394;
+$six: #169989;
+$eight: #373b41;
+$fifteen: #c5c8c6;
+$link-color: $one;
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:900");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url("https://fonts.googleapis.com/css?family=VT323");
 @import "furtive/all";
 @import "fa/font-awesome";
 
