@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Blog
-permalink: /blog/
+title: Log
+permalink: /log/
 description: Journal of my everyday
 ---
 <ul class="post-list">

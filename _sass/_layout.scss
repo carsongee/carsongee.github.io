@@ -1,10 +1,10 @@
 // Header style
 header .left-header h2 {
-    color: #eeeeee;
+    color: $pink;
     font-weight: bold;
     font-size: 3rem;
     margin: 0 0 0 1rem;
-    text-shadow: 2px 2px 0 rgba(222, 135, 205, 1);
+    /* text-shadow: 2px 2px 0 rgba(222, 135, 205, 1); */
 }
 
 header .right-header h1 {
