@@ -11,7 +11,11 @@
       <div class="p1">
         <div class="main grd-row {{ page.title | slugify }}">
           <div class="grd-row-col-6">
-            {{ content }}
+            <div style="display: none" id="content">
+              {{ content }}
+            </div>
+            <div id="typein">
+            </div>
           </div>
         </div>
       </div>
@@ -19,5 +23,22 @@
     {% include footer.html %}
 
   </body>
+  <script type="text/javascript">
+    var i = 0;
+    var isTag, text;
+    var str = document.getElementById('content').innerHTML;
+    (function type() {
+      text = str.slice(0, ++i);
+      if (text === str) return;
 
+      document.getElementById('typein').innerHTML = text;
+
+      var char = text.slice(-1);
+      if( char === '<' ) isTag = true;
+      if( char === '>' ) isTag = false;
+
+      if (isTag) return type();
+      setTimeout(type, 1);
+      }());
+  </script>
 </html>
