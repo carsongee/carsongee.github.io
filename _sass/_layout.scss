@@ -49,6 +49,32 @@ div .main {
     margin: 0;
 }
 
+// Main Style
+.prompt {
+    float: left;
+    padding-right: .5rem;
+}
+.prompt-space {
+    margin-bottom: .5rem;
+}
+input.prompt-input {
+    float: left;
+    width: 15rem;
+    height: 1rem;
+    margin-top: .4rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+}
+
+#content {
+    display: none;
+}
+#typein {
+    padding-bottom: 5rem;
+}
 
 // Footer Style
 .footer {

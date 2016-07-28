@@ -2,6 +2,7 @@
 layout: default
 title: Root
 description: Clipped Compound Randomizer
+command: ./display_menu
 ---
 # Hello
 
