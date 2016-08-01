@@ -6,6 +6,8 @@ description: Programming is second nature.
 ---
 # Dev
 
+##### (Development)
+
 I have been programming in various languages for over fifteen
 years. In that time, I've written just about every class of software
 around. I've developed Web, server, client, embedded, mobile, and
@@ -55,7 +57,17 @@ projects I've enjoyed working on over the years.
     Bash application with Web/Elastic Search backend for tracking and
     search shell histories across multiple hosts/users.
   </dd>
-
+  <dt>
+    <a href="https://github.com/Superpedestrian/sp-jenkins-build-tools">
+      Superpedestrian Jenkins Pipeline Tools'
+    </a>
+    <span>[Creator]</span>
+  </dt>
+  <dd>
+    A set of groovy includes and shell scripts to create
+    ElasticBeanstalk deployments, build docker images, tag releases,
+    and do A/B environment swaps using Jenkins new Pipeline flows.
+  </dd>
   <dt>
     <a href="http://github.com/mitocw/xsiftx">XsiftX</a> <span>[Creator]</span>
   </dt>
@@ -74,26 +86,6 @@ projects I've enjoyed working on over the years.
     forms using a simple drag and drop based interface.  It also has
     great form submission review facilities that include CSV exports
     and graphs of form responses.
-  </dd>
-  <dt>
-    <a href="http://mac-ro-knife.sourceforge.net/">Mac-Ro-Knife</a>
-    <span>[Creator/Maintainer]</span></dt>
-  <dd>
-    Java based desktop application SSH macro tool. This software is
-    used for running simple command line based macros on multiple
-    hosts running SSH. It provides remote scripting to multiple
-    platforms via SSH (i.e. change your password on 20 systems
-    automatically).
-  </dd>
-  <dt>
-    <a href="http://sourceforge.net/projects/audiom/">AudioM</a>
-    <span>[Creator/Maintainer]</span></dt>
-  <dd>
-    Java based desktop utility. AudioM takes audio play list formats
-    (M3U,PLS,PLA/PLP) and copies the files to a new location with a
-    play list matching the new location. It also does play list format
-    conversion. Great for managing disk based MP3 players (Especially
-    the Sansa).
   </dd>
   <dt>
     <a href="http://posh.codeplex.com">Powershell Framework</a>
@@ -143,14 +135,17 @@ of these languages.
 
 ### Web Languages and Frameworks
 
+
+<div class="grd-row">
+<div class="grd-row-col-3-6" markdown="1">
 *Server Side*
 
-- Flask
 - Django
-- ASP
-- PHP
+- Flask
+- NodeJS/Express
 - SQL
-
+</div>
+<div class="grd-row-col-3-6" markdown="1">
 *Client Side*
 
 - HTML
@@ -159,17 +154,22 @@ of these languages.
 - Sass
 - ReactJS
 - BackboneJS
-
+</div>
+</div>
+<div class="grd-row">
+<div class="grd-row-col-3-6" markdown="1">
 ### Application Languages
 
 - Python
 - Java
-- Ruby
 - Javascript
 - C and C++
-
+</div>
+<div class="grd-row-col-3-6" markdown="1">
 ### Scripting
 
 - Bash
 - Powershell
 - Ansible
+</div>
+</div>

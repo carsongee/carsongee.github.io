@@ -27,11 +27,24 @@ h1 {
 }
 h2 {
     font-size: 1rem;
-    color: $two;
+    color: $fourteen;
 }
 h3 {
     font-size: 1rem;
+    color: $two;
+}
+h4 {
+    font-size: 1rem;
     color: $three;
+}
+h5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    color: $eleven;
+    padding: 0;
+    margin: .75rem;
 }
 
 .color-fg {
@@ -49,4 +62,11 @@ h3 {
 }
 .color-12 {
     color: $twelve;
+}
+
+dt span {
+    color: $twelve;
+}
+dd {
+    color: $fifteen;
 }

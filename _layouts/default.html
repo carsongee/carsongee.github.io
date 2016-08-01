@@ -9,7 +9,7 @@
 
     <section id="body">
       <div class="p1">
-        <div class="main grd-row {{ page.title | slugify }}">
+        <div class="main grd-row {{ page.class | slugify }}">
           <div class="grd-row-col-6">
             <div id="content">
               <div class="prompt-space">
@@ -32,39 +32,6 @@
     {% include footer.html %}
 
   </body>
-  <script type="text/javascript">
-    function promptHandler() {
-      $('.prompt-input').last().on('keypress', function (event) {
-        if(event.which === 13) {
-          $(this).attr("disabled", "disabled");
-          var content = $(this).parent().parent();
-          content.append('<br /><p>You entered a command</p>');
-          var clone = $(this).parent().clone(true);
-          var cloneInput = clone.find('.prompt-input');
-          cloneInput.removeAttr('disabled');
-          cloneInput.val('');
-          clone.appendTo(content);
-          cloneInput.focus();
-        }
-      })
-      .focus();
-    }
-    function fadeIn() {
-      var i = 0;
-      var isTag, text;
-      var str = $('#content').html();
-      (function type() {
-        i = i + 15;
-        text = str.slice(0, i);
-        $('#typein').html(text);
-        if (text === str) {
-          $('#content').remove();
-          promptHandler();
-          return;
-        }
-        setTimeout(type, 10);
-      }());
-    }
-    fadeIn();
+  <script type="text/javascript" src="/js/index.js">
   </script>
 </html>

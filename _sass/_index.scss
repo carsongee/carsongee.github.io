@@ -16,3 +16,12 @@ section div .dev {
         color: $twelve
     }
 }
+section div .sys h4 {
+    float: left;
+}
+.expdate {
+    display: block;
+    text-align: right;
+    float: right;
+    color: $five;
+}

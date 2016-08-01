@@ -59,7 +59,7 @@ div .main {
 }
 input.prompt-input {
     float: left;
-    width: 15rem;
+    width: 60%;
     height: 1rem;
     margin-top: .4rem;
     padding: 0;
@@ -73,7 +73,10 @@ input.prompt-input {
     display: none;
 }
 #typein {
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
+}
+#typein ul li {
+    color: $six;
 }
 
 // Footer Style
