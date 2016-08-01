@@ -25,3 +25,21 @@ section div .sys h4 {
     float: right;
     color: $five;
 }
+
+section div .des {
+    img {
+        width: 48%;
+    }
+}
+
+section div .log {
+    li {
+        float: left;
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+        margin-right: 2%;
+        border: 1px dashed $nine;
+        padding: 1rem;
+    }
+}

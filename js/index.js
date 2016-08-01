@@ -22,11 +22,11 @@ function handleCommand(cmd) {
         window.location = 'https://www.lajolla.com/';
         return 'Here we go!';
       };
-      if (strArgs === '.') {
+      if (strArgs === '.' || strArgs === './') {
         location.reload();
         return '';
       }
-      if (strArgs === '..') {
+      if (strArgs === '..' || strArgs === '../') {
         window.location = '../';
         return 'Changing directory';
       }
