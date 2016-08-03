@@ -26,6 +26,14 @@ section div .sys h4 {
     color: $five;
 }
 
+/* post styles */
+article.post time.expdate {
+    margin: -2.6rem 0 0 0;
+}
+article h1 img {
+    align: center;
+}
+
 section div .des {
     img {
         width: 48%;

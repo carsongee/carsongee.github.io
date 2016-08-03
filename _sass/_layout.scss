@@ -1,12 +1,12 @@
 // Header style
-header {
+header.site{
     background-color: $fifteen;
     padding-left: 1rem;
     border-bottom: 1px solid black;
     position: fixed;
     width: 100%;
 }
-header  h1 {
+header.site  h1 {
     color: $eight;
     font-size: .8rem;
     margin: 0;

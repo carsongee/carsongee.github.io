@@ -1,9 +1,9 @@
-<header>
+<header class="site">
   <div class="p0 m0">
     <div class="grd-row">
       <div class="grd-row-col-6-6 left-header">
         <h1>
-          carson@container:{{ page.url }} - {{ page.description }} (bash)
+          carson@container:{{ page.url }} - {{ page.short_description | default: page.description }} (bash)
         </h1>
       </div>
     </div>

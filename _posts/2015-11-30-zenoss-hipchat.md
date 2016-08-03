@@ -2,8 +2,13 @@
 layout: post
 title:  "Zenoss HipChat!"
 date:   2015-11-30 23:15:37 -0400
-categories: software release project
-description: I recently created a command line script for sending Zenoss alerts to HipChat.
+short_description: 'zenoss-hipchat'
+description: |
+  I recently created a command line script for sending Zenoss alerts
+  to HipChat for knowing when things are going wrong in my
+  infrastructure. I've now made it available as an open source
+  installable.
+
 img: /img/posts/zenoss_hipchat.jpg
 ---
 

@@ -18,3 +18,7 @@ exclude:
   - "bower_components/"
 sass:
   style: compressed
+collections:
+  posts:
+    output: true
+    permalink: /log/:categories/:title/
