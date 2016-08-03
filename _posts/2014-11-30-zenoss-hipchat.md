@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Zenoss HipChat!"
-date:   2015-11-30 23:15:37 -0400
 short_description: 'zenoss-hipchat'
 description: |
   I recently created a command line script for sending Zenoss alerts
