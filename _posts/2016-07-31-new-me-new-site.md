@@ -17,9 +17,10 @@ through all that (and don't forget about emojis).
 
 It was pretty cool, still is, but sometimes you just have to change
 for the sake of change.  So welcome to the new terminal version of the
-site.  I've basically removed all of blog entries because life is
-short, and I don't need to be reminded of that thing I did, with that
-technology that used to matter.
+site.  I've basically removed all of blog entries except the last one
+which is almost two years old because life is short, and I don't need to
+be reminded of that thing I did, with that technology that used to
+matter.
 
 So here we are: a little leaner, a little less user friendly (I'll
 keep working on that), and a lot more retro.

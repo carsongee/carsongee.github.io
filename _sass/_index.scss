@@ -41,6 +41,9 @@ section div .des {
 }
 
 section div .log {
+    ul {
+        display: flex;
+    }
     li {
         float: left;
         display: inline-block;
