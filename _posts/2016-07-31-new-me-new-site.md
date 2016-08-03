@@ -12,8 +12,8 @@ img: /img/posts/newsite_newme.jpg
 I think the last time I redesigned this site was around 2010.  That is
 pretty much a lifetime ago at this point.  I live in a new city, and
 I've had three different jobs since then. I've also picked about about
-half a dozen new hobbies, and yet the old spinning circle nav stayed
-through all that (and don't forget about emojis).
+half a dozen new hobbies (and don't forget about emoji availability),
+and yet the old spinning circle nav stayed through all that.
 
 It was pretty cool, still is, but sometimes you just have to change
 for the sake of change.  So welcome to the new terminal version of the
