@@ -40,17 +40,16 @@ section div .des {
     }
 }
 
-section div .log {
-    ul {
-        display: flex;
-    }
-    li {
+ul.post-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+ul.post-list li {
         float: left;
         display: inline-block;
+        flex: 48%;
         vertical-align: top;
-        width: 48%;
         margin-right: 2%;
         border: 1px dashed $nine;
         padding: 1rem;
-    }
 }

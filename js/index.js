@@ -12,7 +12,15 @@ var dirs = {
     {% endif %}
   {% endfor %}
 }
-var current_dir = {{ page.url | jsonify }}
+var log_dirs = {
+  {% for post in site.posts %}
+  {{ post.url | jsonify }}: {
+    title: {{ post.title | jsonify }},
+    url: {{ post.url | jsonify }},
+    description: {{ post.short_description | jsonify }}
+  },
+  {% endfor %}
+}
 
 function handleCommand(cmd) {
   var commands = {
@@ -31,7 +39,7 @@ function handleCommand(cmd) {
         return 'Changing directory';
       }
       // Find if it is a valid directory
-      $.each(dirs, function(key, value) {
+      $.each($.extend(true, dirs, log_dirs), function(key, value) {
         if (
             key.indexOf(strArgs) > -1 ||
             value.title.indexOf(strArgs) > -1
@@ -59,11 +67,25 @@ function handleCommand(cmd) {
     },
     ls: function() {
       var commandStr = 'Here are the folders: <ul>';
+      commandStr += '<li><a href="./">.</li>'
+      commandStr += '<li><a href="../">..</li>'
       $.each(dirs, function(key, value) {
-        if (value.url === current_dir) return;
-        commandStr += '<li><a href="' + value.url + '">' +
-          value.url + '</a> - [' + value.title + '] ' +
-          value.description + '</li>';
+        if (value.url !== window.location.pathname) {
+          commandStr += '<li><a href="' + value.url + '">' +
+            value.url + '</a> - [' + value.title + '] ' +
+            value.description + '</li>';
+        }
+        // Handle special case of posts
+        if (value.url === '/log/') {
+          commandStr += '<ul>'
+          $.each(log_dirs, function(key, value) {
+            commandStr += '<li><a href="' + value.url + '">' +
+              value.url + '</a> - [' + value.title + '] ' +
+              value.description + '</li>';
+          });
+          commandStr += '</ul>'
+        }
+
       });
       return commandStr;
     }
