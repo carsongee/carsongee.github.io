@@ -32,7 +32,7 @@ Release notes suck to make, code reviews on diffs as they go over 100
 lines quickly slide to worthless, simple explicit changes are easier
 to verify through the deployment pipeline, and bug triage through
 blame, history, and bisect go ten times faster with fewer commits.
-Either fixup or squash on the branch your on, or squash on merge.
+Either fixup or squash on the branch you're on, or squash on merge.
 However you do it, avoid the bisect of "added a period" commit
 messages that are murder on bug fixers.
 
@@ -51,7 +51,7 @@ for this change to work.
 
 ## 3. Two long living branches
 
-One developers merge to after code review/squash/tests that gets
+One branch developers merge to after code review/squash/tests that gets
 deployed automatically on every commit/merge.  Developers are happy
 because they get to see their changes immediately, product is happy
 because they get to validate the change is what they want, and ops are
