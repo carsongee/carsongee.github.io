@@ -1,9 +1,14 @@
 /**
  * Syntax highlighting styles
  */
+code {
+    background-color: $eight;
+    text-size: 1rem;
+    font-family: 'VT323';
+    color: $six;
+}
 .highlight {
     background: #fff;
-
     .highlighter-rouge & {
       background: #eef;
     }

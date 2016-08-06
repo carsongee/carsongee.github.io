@@ -51,14 +51,14 @@ for this change to work.
 
 ## 3. Two long living branches
 
-One where developers merge to after code review/squash/tests that gets
+One developers merge to after code review/squash/tests that gets
 deployed automatically on every commit/merge.  Developers are happy
 because they get to see their changes immediately, product is happy
-because they get to validate the change is what they want, and ops is
+because they get to validate the change is what they want, and ops are
 happy because they get a sneak preview of what breaks on release
 deployment.
 
-Branch Two where the development branch gets merged to when you want
+Branch two is where the development branch gets merged to when you want
 customers to see the change. That branch kicks of the Continuous
 Deployment pipeline (approvals, QA, etc).
 
@@ -116,8 +116,8 @@ possibly take.
 
 ### When to Ignore
 
-You feel like having a commit history like, and never being able to
-track down when a bug got added:
+You feel like having a commit history like:
 
 ![1296](https://imgs.xkcd.com/comics/git_commit.png)
 
+and not being able to quickly track down when a bug got added.

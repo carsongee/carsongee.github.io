@@ -40,9 +40,13 @@ function handleCommand(cmd) {
       }
       // Find if it is a valid directory
       $.each($.extend(true, dirs, log_dirs), function(key, value) {
+        console.log(key.slice(0, -1));
         if (
-            key.indexOf(strArgs) > -1 ||
-            value.title.indexOf(strArgs) > -1
+            key === strArgs ||
+            key.slice(0, -1) === strArgs ||
+            key.slice(1, -1) === strArgs ||
+            key.slice(1) === strArgs ||
+            value.title === strArgs
         ) {
           window.location = value.url;
           return 'Changing directory';
