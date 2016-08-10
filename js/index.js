@@ -92,6 +92,15 @@ function handleCommand(cmd) {
 
       });
       return commandStr;
+    },
+    fortune: function() {
+      var return_val;
+      $.ajax( {url: "data/fortune.txt", async: false})
+        .done(function(data) {
+          var dataArr = data.split('\n');
+          return_val = dataArr[Math.floor(Math.random() * dataArr.length)]
+        });
+      return return_val;
     }
   }
   var unpublishedCommands = {
