@@ -105,6 +105,25 @@ function handleCommand(cmd) {
       default:
         return "I don't know how to grep that"
       }
+    },
+    'sl': function() {
+      var sl = $('<div id="sl-overlay"></div>');
+      var train_num = Math.random() * 10000 % 10|0;
+      console.log(train_num);
+      var train = $(
+        '<div id="sl-mover">' +
+          '<a href="http://heathersanimations.com/trainsthree.html">' +
+          '<img src="/img/train' + train_num + '.gif" /></a>' +
+          '</div>'
+      );
+      sl.appendTo($('body'));
+      train.appendTo(sl);
+      train.animate({
+        right: '100%'
+      }, 10000, function() {
+        sl.remove();
+      });
+      return "That's what you get for an ls typo";
     }
   }
   var args = cmd.split(' ');
