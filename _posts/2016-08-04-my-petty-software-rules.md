@@ -14,7 +14,7 @@ img: /img/posts/software_rules.jpg
 
 I feel like this shouldn't have to be on the list, but seriously,
 follow the pack on this one. I'm normally all about that underground
-software choice that is technically superior but lesser know, but when
+software choice that is technically superior but lesser known, but when
 it comes to something like VCS, just take what everyone else is
 currently developing tools against.  More people can collaborate,
 deployment and testing integrations are easier, and shared knowledge
@@ -59,7 +59,7 @@ happy because they get a sneak preview of what breaks on release
 deployment.
 
 Branch two is where the development branch gets merged to when you want
-customers to see the change. That branch kicks of the Continuous
+customers to see the change. That branch kicks off the Continuous
 Deployment pipeline (approvals, QA, etc).
 
 ### When to Ignore
@@ -78,8 +78,8 @@ enough methods to be useful, etc.
 
 ### When to Ignore
 
-Lint, never, there are linters for everything, they teach you things
-you never knew about and worth the educational value alone, let alone
+Never for linting. There are linters for everything, they teach you things
+you never knew about and are worth the educational value alone, let alone
 security issues, and making code readable to yourself 6 months down
 the road.  Tests and coverage, sometimes these don't make sense, like
 a documentation project or something with so few moving parts you can
@@ -93,7 +93,7 @@ embedded, or desktop applicaion projects, but to prevent three
 branches, or some other process that slows things down, have the
 release branch deploy to alternating environments for production.  In
 addition to this giving you a release stack to QA before final
-customer release it also gives you a fast fallback stance to a
+customer release, it also gives you a fast fallback stance to a
 previous release if it all catches on fire.
 
 The catch for this is that backend storage models have to be forward
