@@ -3,7 +3,7 @@ layout: post
 title:  "¡Colors and Commands!"
 short_description: "Want this site's color scheme? Now we can!"
 description: |
-    This site is based on a terminal color scheme I made inside a
+    This site is based on a terminal color scheme I made inside
     a Trough of Disillusionment while redesigning this site. I
     was feeling stuck on the design when a lightbulb lit.
     Why not a terminal Website?  Here we are.  It comes with an
