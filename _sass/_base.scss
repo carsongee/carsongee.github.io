@@ -17,8 +17,7 @@
 body {
     color: $text-color;
     background-color: $background-color;
-    font-family: 'VT323'
-    /* background-image: url('../img/clean-gray-paper.png'); */
+    font-family: $body-font;
 }
 
 h1 {
