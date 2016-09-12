@@ -102,10 +102,32 @@ function handleCommand(cmd) {
           });
       }
       return fortuneCache[Math.floor(Math.random() * fortuneCache.length)]
+    },
+    source: function(args) {
+      switch (args[0]) {
+      case 'god-mode':
+      case 'godmode':
+      case 'god':
+      case 'God':
+      case 'WhosYourDaddy':
+        $('#bg-img').empty();
+        $('link[rel="stylesheet"]').attr('href','{{ "/css/god.css" | prepend: site.baseurl }}');
+        $('body').append('<div class="theme-footer"></div>');
+        Cookies.set('theme', 'god');
+        return 'Get over here!';
+      case 'default':
+        $('link[rel="stylesheet"]').attr('href','{{ "/css/main.css" | prepend: site.baseurl }}');
+        $('div.theme-footer').remove();
+        Cookies.remove('theme');
+        return 'Safe Mode Activated!';
+      default:
+        return args[0] + ': No such file or directory';
+
+      }
     }
   }
   var unpublishedCommands = {
-    'grep': function(args) {
+    grep: function(args) {
       switch (args[0]) {
       case 'love':
       case "'love'":
@@ -116,10 +138,9 @@ function handleCommand(cmd) {
         return "I don't know how to grep that"
       }
     },
-    'sl': function() {
+    sl: function() {
       var sl = $('<div id="sl-overlay"></div>');
       var train_num = Math.random() * 10000 % 10|0;
-      console.log(train_num);
       var train = $(
         '<div id="sl-mover">' +
           '<a href="http://heathersanimations.com/trainsthree.html">' +
@@ -182,4 +203,22 @@ function fadeIn() {
     setTimeout(type, 10);
   }());
 }
+
+function setTheme(theme) {
+  if( theme !== undefined) {
+    handleCommand('source ' + theme);
+  }
+}
+
+function setNavigation(nav) {
+  var linkedNav = '/';
+  $.each(nav, function(index, value) {
+    linkedNav += '<a href="/' + nav.slice(0, index + 1).join('/') + '">' + value + '</a>/';
+  });
+  return linkedNav
+}
+
+setTheme(Cookies.get('theme'));
+var newNav = setNavigation($('#nav-path').html().split('/').filter(function(el) {return el.length != 0}));
+$('#nav-path').html(newNav);
 fadeIn();

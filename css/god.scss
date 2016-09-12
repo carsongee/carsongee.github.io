@@ -1,0 +1,65 @@
+---
+# God mode root css swap
+---
+@charset "utf-8";
+
+$background-color: #7c0008;
+$foreground-color: #bfabbb;
+$text-color: $foreground-color;
+$body-font: 'Share Tech Mono', mono;
+$zero: #282a2e;
+$one: #ff0000;
+$two: #fff15b;
+$three: #bd4343;
+$four: #177acc;
+$five: #85678f;
+$six: #cbcbcb;
+$seven: #579ade;
+$eight: #838d9d;
+$nine: #cc6666;
+$ten: #b8c62d;
+$eleven: #f0c674;
+$twelve: #0071d1;
+$thirteen: #b294bb;
+$fourteen: #7ccbc0;
+$fifteen: #eda8df;
+
+$link-color: $one;
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+@import "furtive/all";
+@import "fa/font-awesome";
+
+#bg-img {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    opacity: 0.10;
+    filter: alpha(opacity=10);
+    background-image: url('/img/wolf.png');
+    min-width: 200px;
+    min-height: 262px;
+}
+.theme-footer {
+    position: fixed;
+    bottom: 0;
+    background-image: url('/img/fire.png');
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+    z-index: -110;
+    width: 100%;
+    min-height: 200px;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "index"
+;

@@ -6,6 +6,7 @@
 $background-color: #0f090d;
 $foreground-color: #b493b4;
 $text-color: $foreground-color;
+$body-font: 'VT323', mono;
 $zero: #221d24;
 $one: #a3409d;
 $two: #52634e;
@@ -24,7 +25,6 @@ $fourteen: #8abeb7;
 $fifteen: #c5c8c6;
 
 $link-color: $one;
-
 @import url("https://fonts.googleapis.com/css?family=Raleway:900");
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 @import url("https://fonts.googleapis.com/css?family=VT323");
