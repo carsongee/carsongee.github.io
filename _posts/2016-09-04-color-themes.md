@@ -22,8 +22,8 @@ terminal emulators and Emacs.  First up, the "gift":
 
 ## Clipped Compound Color Scheme
 
-I'm all about collaboration and open source tasties. So, PRs to these themes can be done
-directly to this site at the
+I'm all about collaboration and open source tasties. So, PRs to these
+themes can be done directly to this site at the
 [carsongee.github.io repo](github.com/carsongee/carsongee.github.io/tree/master/files/posts/clipped-compound).
 It was blast making them, and I'd highly recommend making your own.  I
 used [terminal.sexy](http://terminal.sexy) for making the terminal

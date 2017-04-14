@@ -188,11 +188,13 @@ function promptHandler() {
 }
 
 function fadeIn() {
+  var increment = 15
   var i = 0;
   var isTag, text;
   var str = $('#content').html();
+  if (str.indexOf('class="gist"') > 0) increment = 400;
   (function type() {
-    i = i + 15;
+    i = i + increment;
     text = str.slice(0, i);
     $('#typein').html(text);
     if (text === str) {
