@@ -6,7 +6,8 @@ description: |
     I got curious about how much code/commits/repos I've contributed
     to at my current gig, and I couldn't find anything else out there,
     so I pulled together a script for getting contributor statistics for
-    a specified organization on Github
+    a specified organization on Github.
+    Octocat by <a href="https://github.com/jeejkang">jeejkang</a>.
 img: /img/posts/privateinvestocat.jpg
 ---
 
