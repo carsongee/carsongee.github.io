@@ -41,14 +41,6 @@ div .main {
     margin: -.7em 0 0 0;
 }
 
-#bg-img .flip {
-    @include horizontal-flip();
-    color: $eight;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-
 // Main Style
 .prompt {
     float: left;

@@ -42,12 +42,20 @@ projects I've enjoyed working on over the years.
     the results into unit tests.
   </dd>
   <dt>
-    <a href="http://code.edx.org">edX</a> <span>[Contributor]</span>
+    <a href="http://code.edx.org">edX</a>
+    <span>[Contributor]</span>
   </dt>
   <dd>
     Open source learning management system for next generation online
     education. Core contributions to edx-platform and configuration
     repositories.
+  </dd>
+  <dt>
+    <a href="https://github.com/Superpedestrian/lambada">Lambada</a>
+    <span>[Creator]</span>
+  </dt>
+  <dd>
+    Flask like framework for writing and deploying multiple lambdas from one repository.
   </dd>
   <dt>
     <a href="http://archelon.rtfd.org">archelon</a>
@@ -129,9 +137,8 @@ time employee.  Here are some of the highlights:
 ## Languages
 
 Here is a laundry list of the languages I have learned and used over
-the years. I currently prefer Python and Java for software, and
-Powershell for Windows shell scripting, but I still regularly use most
-of these languages.
+the years. I currently prefer Python, Swift, and JavaScript, but I still
+regularly use most of these languages.
 
 ### Web Languages and Frameworks
 
@@ -152,6 +159,7 @@ of these languages.
 - CSS
 - JavaScript
 - Sass
+- VueJS
 - ReactJS
 - BackboneJS
 </div>
@@ -161,6 +169,8 @@ of these languages.
 ### Application Languages
 
 - Python
+- Kotlin
+- Swift
 - Java
 - Javascript
 - C and C++

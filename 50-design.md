@@ -12,8 +12,8 @@ class: des
 Just that word makes me smile. Design. When it comes to interfaces and
 software usability, I've been obsessed for fifteen years. Since my
 first personal Website from my local ISP back in 1995, I've always
-driven myself to refine Websites, photos, desktop applications, and
-pretty much anything else to get the most out of them.
+driven myself to refine Websites, photos, desktop applications, bikes
+and pretty much anything else to get the most out of them.
 
 ## Illustrations
 
